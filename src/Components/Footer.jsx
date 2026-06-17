@@ -22,7 +22,7 @@ export default function Footer() {
       </span>
       <div style={{ display: "flex", gap: "1.5rem" }}>
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Nitish-Soni"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "white", transition: "opacity 0.2s" }}
@@ -44,7 +44,7 @@ export default function Footer() {
           </svg>
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/-nitish-soni-/"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "white", transition: "opacity 0.2s" }}
@@ -62,7 +62,7 @@ export default function Footer() {
           </svg>
         </a>
         <a
-          href="https://twitter.com/yourusername"
+          href="https://instagram.com/_2nitish6_"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "white", transition: "opacity 0.2s" }}
@@ -73,10 +73,16 @@ export default function Footer() {
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="currentColor"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
           </svg>
         </a>
       </div>
