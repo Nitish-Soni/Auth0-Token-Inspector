@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Auth0Provider } from "@auth0/auth0-react";
-import ConfigForm from "./components/ConfigForm";
-import TokenDashboard from "./components/TokenDashboard";
+import ConfigForm from "./Components/ConfigForm.jsx";
+import TokenDashboard from "./Components/TokenDashboard.jsx";
 import "./App.css";
 export default function App() {
   const [authConfig, setAuthConfig] = useState(null);
