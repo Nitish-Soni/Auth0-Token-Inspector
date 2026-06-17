@@ -39,13 +39,13 @@ For this app to work, you **must** configure your Application in the Auth0 Dashb
 
 ## Getting Started
 
-1. **Clone the repository:**
-   `git clone [https://github.com/Nitish-Soni/Auth0-Token-Inspector.git](https://github.com/Nitish-Soni/Auth0-Token-Inspector)`
+1. **Clone the repository:** <br/>
+   `git clone [https://github.com/Nitish-Soni/Auth0-Token-Inspector.git](https://github.com/Nitish-Soni/Auth0-Token-Inspector)` <br/>
    `cd Auth0-Token-Inspector`
-2. **Install Dependencies**
+2. **Install Dependencies**<br/>
    `npm install`
-3. **Run the Development Server**
-   #If using Vite
-   `npm run dev`
-   #If using Create React App
+3. **Run the Development Server**<br/>
+   #If using Vite<br/>
+   `npm run dev`<br/>
+   #If using Create React App<br/>
    `npm start`
