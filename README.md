@@ -1,18 +1,51 @@
-# React + Vite
+# Auth0 Token Inspector Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, responsive React application designed to help developers quickly test Auth0 authentication flows and inspect JSON Web Tokens (JWTs) on the fly.
 
-Currently, two official plugins are available:
+Instead of hardcoding environment variables, this app allows you to input your Auth0 Tenant Domain, Client ID, and API Audience dynamically.
+It then authenticates the user, retrieves the tokens, and displays both the raw and decoded Access and ID tokens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- **Dynamic Configuration:** No `.env` files required. Input your Auth0 details directly into the UI.
+- **Shareable Configurations:** Your tenant setup is saved into the URL parameters (`?d=...&c=...&a=...`), allowing you to bookmark or share specific Test Environments.
+- **Token Inspection:** Automatically Fetches and Decodes both your `Access Token` and `ID Token` into readable JSON.
+- **Fully Responsive:** Built with fluid Typography and Flexbox, ensuring it looks great on both Massive Desktop Monitors and Small Mobile Screens.
+- **Component-Based Architecture:** Clean, Maintainable Codebase separated into logical React Components.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Prerequisites
 
-Note: This will impact Vite dev & build performances.
+Before running this app, ensure you have:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) installed on your machine.
+- An active [Auth0](https://auth0.com/) account with a configured Application and API.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Important Auth0 Configuration
+
+For this app to work, you **must** configure your Application in the Auth0 Dashboard:
+
+1. Follow the below Auth0 Document to Create an Application.
+   https://auth0.com/docs/get-started/auth0-overview/create-applications
+2. Once Created, Under **Application URIs**, add your Local Dev URL (e.g., `http://localhost:5173` or `http://localhost:3000`) to the following fields:
+   - **Allowed Callback URLs**
+   - **Allowed Logout URLs**
+   - **Allowed Web Origins**
+3. Save your Changes.
+4. Copy the Domain and Client ID Value from the Settings Tab of the newly created Application.
+5. Post which create an API using the below Auth0 Document.
+   https://auth0.com/docs/get-started/auth0-overview/set-up-apis
+6. Once the API is created go to Application Access Tab of your newly created API and Grant User Delegated Access to the Application created in the First Step.
+7. Copy the Identifier Value from the Settings Tab of the newly created API.
+
+## Getting Started
+
+1. **Clone the repository:**
+   `git clone [https://github.com/Nitish-Soni/Auth0-Token-Inspector.git](https://github.com/Nitish-Soni/Auth0-Token-Inspector)`
+   `cd Auth0-Token-Inspector`
+2. **Install Dependencies**
+   `npm install`
+3. **Run the Development Server**
+   #If using Vite
+   `npm run dev`
+   #If using Create React App
+   `npm start`
