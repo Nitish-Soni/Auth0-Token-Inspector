@@ -1,4 +1,4 @@
-# Auth0 Token Inspector Dashboard
+# Auth0 Token Inspector Dashboard ([Live](https://auth0-token-inspector.2nison6.com))
 
 A lightweight, responsive React application designed to help developers quickly test Auth0 authentication flows and inspect JSON Web Tokens (JWTs) on the fly.
 
@@ -26,7 +26,7 @@ For this app to work, you **must** configure your Application in the Auth0 Dashb
 
 1. Follow the below Auth0 Document to Create an Application.<br/>
    https://auth0.com/docs/get-started/auth0-overview/create-applications
-2. Once Created, Under **Application URIs**, add your Local Dev URL (e.g., `http://localhost:5173` or `http://localhost:3000`) to the following fields:
+2. Once Created, Under **Application URIs**, add URL e.g., `http://localhost:5173` or `http://localhost:3000` (If using Local Development) or `https://auth0-token-inspector.2nison6.com` (If you just want to use my Website) to the following fields:
    - **Allowed Callback URLs**
    - **Allowed Logout URLs**
    - **Allowed Web Origins**
