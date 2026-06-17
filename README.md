@@ -24,7 +24,7 @@ Before running this app, ensure you have:
 
 For this app to work, you **must** configure your Application in the Auth0 Dashboard:
 
-1. Follow the below Auth0 Document to Create an Application.
+1. Follow the below Auth0 Document to Create an Application.<br/>
    https://auth0.com/docs/get-started/auth0-overview/create-applications
 2. Once Created, Under **Application URIs**, add your Local Dev URL (e.g., `http://localhost:5173` or `http://localhost:3000`) to the following fields:
    - **Allowed Callback URLs**
@@ -32,7 +32,7 @@ For this app to work, you **must** configure your Application in the Auth0 Dashb
    - **Allowed Web Origins**
 3. Save your Changes.
 4. Copy the Domain and Client ID Value from the Settings Tab of the newly created Application.
-5. Post which create an API using the below Auth0 Document.
+5. Post which create an API using the below Auth0 Document.<br/>
    https://auth0.com/docs/get-started/auth0-overview/set-up-apis
 6. Once the API is created go to Application Access Tab of your newly created API and Grant User Delegated Access to the Application created in the First Step.
 7. Copy the Identifier Value from the Settings Tab of the newly created API.
