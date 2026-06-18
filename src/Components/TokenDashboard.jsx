@@ -71,8 +71,8 @@ export default function TokenDashboard({ onReset }) {
               borderRadius: "4px",
               marginBottom: "1.5rem",
               fontFamily: "monospace",
-              width: "100%",
-              maxWidth: "600px",
+              minWidth: "80%",
+              maxWidth: "40%",
               overflowX: "auto",
             }}
           >
@@ -84,15 +84,19 @@ export default function TokenDashboard({ onReset }) {
             You might have not configured the Application/API correctly.
             <br />
             Please Follow the{" "}
-            <span
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/Nitish-Soni/Auth0-Token-Inspector/blob/main/README.md"
               style={{
                 fontWeight: "800",
                 cursor: "pointer",
                 textDecoration: "underline",
+                color: "white",
               }}
             >
               Documentation
-            </span>
+            </a>
           </div>
           <button
             onClick={onReset}
