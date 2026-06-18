@@ -24,7 +24,7 @@ Before running this app, ensure you have:
 
 For this app to work, you **must** configure your Application in the Auth0 Dashboard:
 
-1. Follow the below Auth0 Document to Create an Application.<br/>
+1. Follow the below Auth0 Document to Create an Application. Make sure the Application Type is **Single Page Application** else make sure the Authentication Type under Credentials is set to **None**<br/>
    https://auth0.com/docs/get-started/auth0-overview/create-applications
 2. Once Created, Under **Application URIs**, add URL e.g., `http://localhost:5173` or `http://localhost:3000` (If using Local Development) or `https://auth0-token-inspector.2nison6.com` (If you just want to use my Website) to the following fields:
    - **Allowed Callback URLs**
@@ -49,7 +49,3 @@ For this app to work, you **must** configure your Application in the Auth0 Dashb
    `npm run dev`<br/>
    #If using Create React App<br/>
    `npm start`
-
-## Limitation
-
-It works with all Application Type, except when Organizations are Involved. It needs to be a Single Page Application if Organization are involved as this App is built without a Server and uses the Auth0 React Library.
