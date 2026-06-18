@@ -7,11 +7,11 @@ It then authenticates the user, retrieves the tokens, and displays both the raw 
 
 ## Features
 
-- **Dynamic Configuration:** No `.env` files required. Input your Auth0 details directly into the UI.
-- **Shareable Configurations:** Your tenant setup is saved into the URL parameters (`?d=...&c=...&a=...`), allowing you to bookmark or share specific Test Environments.
-- **Token Inspection:** Automatically Fetches and Decodes both your `Access Token` and `ID Token` into readable JSON.
-- **Fully Responsive:** Built with fluid Typography and Flexbox, ensuring it looks great on both Massive Desktop Monitors and Small Mobile Screens.
-- **Component-Based Architecture:** Clean, Maintainable Codebase separated into logical React Components.
+- **Dynamic Multi-Tenant Configuration:** No `.env` files required. Swap between different Auth0 tenants, client IDs, and audiences in seconds.
+- **B2B Organization Support:** Includes an optional `Organization ID` configuration field to test multi-tenant corporate enterprise login flows.
+- **Shareable Test Environments:** Your entire configuration is safely encoded into URL search parameters (`?d=...&c=...&a=...&o=...`), allowing you to bookmark specific environments or share them with teammates.
+- **Live JWT Decoder:** Displays both the raw cryptographic strings and fully parsed JSON structures for both `Access` and `ID` tokens.
+- **Clean Component Architecture:** Reorganized out of a single file into isolated, modular, and maintainable React components.
 
 ## Prerequisites
 
