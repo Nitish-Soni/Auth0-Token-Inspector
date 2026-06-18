@@ -49,3 +49,7 @@ For this app to work, you **must** configure your Application in the Auth0 Dashb
    `npm run dev`<br/>
    #If using Create React App<br/>
    `npm start`
+
+## Limitation
+
+It works with all Application Type, except when Organizations are Involved. It needs to be a Single Page Application if Organization are involved as this App is built without a Server and uses the Auth0 React Library.

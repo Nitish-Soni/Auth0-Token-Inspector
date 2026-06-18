@@ -66,7 +66,7 @@ export default function ConfigForm({ handleConnect }) {
               }}
             >
               <label style={{ color: "white", marginBottom: "0.5rem" }}>
-                Auth0 Domain:
+                Auth0 Domain:<span style={{ color: "red" }}>*</span>
               </label>
               <input
                 name="domain"
@@ -92,7 +92,7 @@ export default function ConfigForm({ handleConnect }) {
               }}
             >
               <label style={{ color: "white", marginBottom: "0.5rem" }}>
-                Client ID:
+                Client ID:<span style={{ color: "red" }}>*</span>
               </label>
               <input
                 name="clientId"
@@ -118,13 +118,38 @@ export default function ConfigForm({ handleConnect }) {
               }}
             >
               <label style={{ color: "white", marginBottom: "0.5rem" }}>
-                Audience:
+                Audience:<span style={{ color: "red" }}>*</span>
               </label>
               <input
                 name="audience"
                 type="text"
                 required
                 placeholder="https://your-api-identifier"
+                style={{
+                  width: "100%",
+                  background: "transparent",
+                  border: "2px solid white",
+                  borderRadius: "5px",
+                  padding: "0.75rem",
+                  color: "white",
+                  boxSizing: "border-box",
+                }}
+              />
+            </div>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                width: "100%",
+              }}
+            >
+              <label style={{ color: "white", marginBottom: "0.5rem" }}>
+                Organization ID:
+              </label>
+              <input
+                name="organization"
+                type="text"
+                placeholder="org_xxxxxxxxxxxxxx"
                 style={{
                   width: "100%",
                   background: "transparent",
